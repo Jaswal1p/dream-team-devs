@@ -1,0 +1,25 @@
+{
+  "name": "dream-team-devs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jaswal1p/dream-team-devs.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jaswal1p/dream-team-devs/issues"
+  },
+  "homepage": "https://github.com/Jaswal1p/dream-team-devs#readme",
+  "devDependencies": {
+    "jest": "^27.4.7"
+  }
+}
