@@ -1,8 +1,6 @@
-const { expect } = require('@jest/globals');
-const { test } = require('picomatch');
 const Employee = require('../lib/Employee');
 
-const employee = new Employee('Jaswal', '1357', 'jaswal1p@yahoo.com');
+const employee = new Employee('Jaswal', '1357', 'Jaswal1p@yahoo.com');
 
 test('test to see if we can get the constructor vlues of employee object', () => {
     expect(employee.name).toBe('Jaswal');
@@ -19,7 +17,7 @@ test('test to get the id from the getId() method', () => {
 });
 
 test('test to get the email from the getEmail() method', () => {
-    expect(employee.getEmail()).toBe('jaswal1p@yahoo.com');
+    expect(employee.getEmail()).toBe('Jaswal1p@yahoo.com');
 });
 
 test('test to get employee role from the getRole() method', () => {
