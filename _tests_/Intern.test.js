@@ -20,8 +20,8 @@ test('test to get the email from the getEmail() method', () => {
     expect(intern.getEmail()).toBe('Jaswal1p@yahoo.com');
 });
 
-test('test to get the school name from the getGithub() method', () => {
-    expect(intern.getGithub()).toBe('Uconn');
+test('test to get the school name from the getSchool() method', () => {
+    expect(intern.getSchool()).toBe('UCONN');
 });
 
 test('test to get intern role from the getRole() method', () => {
