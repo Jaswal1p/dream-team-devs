@@ -1,4 +1,3 @@
-const { test } = require('jest-circus');
 const Manager = require('../lib/Manager');
 
 const manager = new Manager('Steve', '2468', 'Jaswal1p@yahoo.com', '800888008');
@@ -21,6 +20,10 @@ test('test to get the email from the getEmail() method', () => {
     expect(manager.getEmail()).toBe('Jaswal1p@yahoo.com');
 });
 
-test('test to get employee role from the getRole() method', () => {
+test('test to get manager role from the getRole() method', () => {
     expect(manager.getRole()).toBe('Manager');
+});
+
+test('test to get manager phone number from the getRole() method', () => {
+    expect(manager.getOfficePhone()).toBe('800888008');
 });
