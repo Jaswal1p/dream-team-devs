@@ -173,4 +173,87 @@ const promptEngineer = () => {
     })    
 };
 
+const promptIntern = () => {
+    console.log(`
+    ===============
+    Add New Intern
+    ===============
+    `);
 
+    return inquirer.prompt([
+        {
+            type: 'input',
+            name: 'name',
+            message: 'What is the name of intern? (Required)',
+            validate: internName => {
+                if (internName) {
+                    return true;
+                } else {
+                    console.log('Please enter the name of intern!');
+                    return false;
+                }
+            }
+        },
+        {
+            type: 'input',
+            name: 'employeeID',
+            message: "Enter intern's employee ID (Required)",
+            validate: employeeId => {
+                if (employeeId) {
+                    return true;
+                } else {
+                    console.log("Please enter intern's employee ID");
+                    return false;
+                }
+            }
+        },
+        {
+            type: 'input',
+            name: 'email',
+            message: "Enter intern's email address (Required)",
+            validate: email => {
+                if (email) {
+                    return true;
+                } else {
+                    console.log("Please enter intern's email address");
+                    return false;
+                }
+            }
+        },
+        {
+            type: 'input',
+            name: 'school',
+            message: "Enter intern's school. (Required)",
+            validate: school => {
+                if (school) {
+                    return true;
+                } else {
+                    console.log("Please enter intern's school");
+                    return false;
+                }
+            }
+        }
+    ])
+    .then(answers => { 
+        console.log(answers);
+        const intern = new Intern(answers.name, answers.employeeId, answers.email, answers.school);
+        teamMembers.push(intern);
+        promptMenu();
+    })    
+};
+
+const buildTeam = () => {
+    console.log(`
+    ===========================
+    Dream team is now complete!
+    ===========================
+    `);
+
+    // now i am creating output directory
+    if (!fs.existsSync(OUTPUT_DIR)) {
+        fs.mkdirSync(OUTPUT_DIR)
+    }
+    fs.writeFileSync(outputPath, generateSite(teamMembers), "utf-8");
+}
+
+promptManager();
