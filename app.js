@@ -32,8 +32,44 @@ const promptManager = () => {
            }
        },
        {
-           
-       }
+           type: 'input',
+           name: 'employeeID',
+           message: 'Enter your employee ID (Required)',
+           validate: employeeId => {
+               if (employeeId) {
+                   return true;
+               } else {
+                   console.log('Please enter your employee ID');
+                   return false;
+               }
+           }
+       },
+       {
+           input: 'input',
+           name: 'email',
+           message: 'Enter your email address (Required)',
+           validate: email => {
+               if (email) {
+                   return true;
+               } else {
+                   console.log('Please enter your email address');
+                   return false;
+               }
+           }
+       },
+       {
+           input: 'input',
+           name: 'officePhone',
+           message: 'Enter your office phone number (Required)',
+           validate: officePhone => {
+               if (officePhone) {
+                   return true;
+               } else {
+                   console.log('Please enter your office phone number');
+                   return false;
+               }
+           }
+       },
 
     ])
 }
