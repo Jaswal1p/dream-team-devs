@@ -69,6 +69,43 @@ const generateTeam = (team) => {
         }
     }
 
+    // all html sections to be joined
+    return html.join('');
+}
 
+    // now we code for export function to generate entire page
+
+module.exports = team => {
+
+    return `
+      <!DOCTYPE html>
+      <html lang="en"> 
+
+
+        <head>
+           <meta charset="UTF-8">
+           <meta name="viewport" content="width=device-width, initial-scale=1.0">
+           <meta http-equiv="X-UA-Compatible" content="ie=edge">
+           <title>Team Portfolio Generator</title>
+           <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" />
+               integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+           <script src="https://kit.fontawesome.com/1e0a13a89f.js" crossorigin="anonymous"></script>
+           <link rel="stylesheet" href="../dist/style.css">
+        </head>
+
+        <body>
+            <header>
+            <h1> My Team </h1>
+            </header>
+
+            <main> ${generateTeam(team)} </main>
+            
+        </body>    
+        
+      </html>
+    `;
 
 }
+
+
+
