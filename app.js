@@ -8,6 +8,8 @@ const Intern = require('./lib/Intern');
 
 const Engineer = require('./lib/Engineer');
 
+const generateSite = require('./src/generate-site.js');
+
 const path = require('path');
 
 const OUTPUT_DIR = path.resolve(__dirname, "output");
