@@ -45,7 +45,7 @@ const promptManager = () => {
            }
        },
        {
-           input: 'input',
+           type: 'input',
            name: 'email',
            message: 'Enter your email address (Required)',
            validate: email => {
@@ -58,7 +58,7 @@ const promptManager = () => {
            }
        },
        {
-           input: 'input',
+           type: 'input',
            name: 'officePhone',
            message: 'Enter your office phone number (Required)',
            validate: officePhone => {
@@ -83,9 +83,94 @@ const promptManager = () => {
 const promptMenu = () => {
     return inquirer.prompt([
         {
-            
+            type: 'list',
+            name: 'menu',
+            message: 'Please select the position of employee you would like to add to this team:',
+            choices: ['add an engineer', 'add an intern', 'dream team is now complete!']
         }
     ])
-}
+    .then(userChoice => {
+        switch (userChoice.menu) {
+            case "add an engineer":
+                promptEngineer();
+                break;
+            case "add an intern":
+                promptIntern();
+                break;
+            default:
+                buildTeam();    
+
+        }
+    });
+};
+
+const promptEngineer = () => {
+    console.log(`
+    ==================
+    Add New Engineer
+    ===================
+    `);
+
+    return inquirer.prompt([
+        {
+            type: 'input',
+            name: 'name',
+            message: 'What is the name of engineer? (Required)',
+            validate: engineerName => {
+                if (engineerName) {
+                    return true;
+                } else {
+                    console.log('Please enter the name of engineer!');
+                    return false;
+                }
+            }
+        },
+        {
+            type: 'input',
+            name: 'employeeID',
+            message: 'Enter engineer employee ID (Required)',
+            validate: employeeId => {
+                if (employeeId) {
+                    return true;
+                } else {
+                    console.log('Please enter engineer employee ID');
+                    return false;
+                }
+            }
+        },
+        {
+            type: 'input',
+            name: 'email',
+            message: 'Enter engineer email address (Required)',
+            validate: email => {
+                if (email) {
+                    return true;
+                } else {
+                    console.log('Please enter engineer email address');
+                    return false;
+                }
+            }
+        },
+        {
+            type: 'input',
+            name: 'githubUsername',
+            message: "Enter engineer's Github username. (Required)",
+            validate: githubUsername => {
+                if (githubUsername) {
+                    return true;
+                } else {
+                    console.log("Please enter engineer's github username");
+                    return false;
+                }
+            }
+        }
+    ])
+    .then(answers => { 
+        console.log(answers);
+        const engineer = new Engineer(answers.name, answers.employeeId, answers.email, answers.githubUsername);
+        teamMembers.push(engineer);
+        promptMenu();
+    })    
+};
 
 
