@@ -72,4 +72,20 @@ const promptManager = () => {
        },
 
     ])
+    .then(answers => {
+        console.log(answers);
+        const manager = new Manager(answers.name, answers.employeeId, answers.email, answers.officePhone);
+        teamMembers.push(manager);
+        promptMenu();
+    })
+};
+
+const promptMenu = () => {
+    return inquirer.prompt([
+        {
+            
+        }
+    ])
 }
+
+
