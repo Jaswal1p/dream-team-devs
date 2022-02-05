@@ -10,8 +10,8 @@ header {
 }
 
 main {
-    /* display: flex;
-    flex-wrap: wrap; */
+    display: flex;
+    flex-wrap: wrap;
     margin: 15px;
     padding: 10px;
 
@@ -19,10 +19,12 @@ main {
 
 .card-container {
     display: flex !important;
-    flex-direction: row !important;
+    flex-direction:row !important;
+    flex-wrap: wrap !important;
 }
 
 .card {
+    
     margin: 15px !important;
 }
 
