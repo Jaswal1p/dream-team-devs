@@ -76,7 +76,7 @@ const promptManager = () => {
     ])
     .then(answers => {
         console.log(answers);
-        const manager = new Manager(answers.name, answers.employeeId, answers.email, answers.officePhone);
+        const manager = new Manager(answers.name, answers.employeeID, answers.email, answers.officePhone);
         teamMembers.push(manager);
         promptMenu();
     })
@@ -169,7 +169,7 @@ const promptEngineer = () => {
     ])
     .then(answers => { 
         console.log(answers);
-        const engineer = new Engineer(answers.name, answers.employeeId, answers.email, answers.githubUsername);
+        const engineer = new Engineer(answers.name, answers.employeeID, answers.email, answers.githubUsername);
         teamMembers.push(engineer);
         promptMenu();
     })    
@@ -238,7 +238,7 @@ const promptIntern = () => {
     ])
     .then(answers => { 
         console.log(answers);
-        const intern = new Intern(answers.name, answers.employeeId, answers.email, answers.school);
+        const intern = new Intern(answers.name, answers.employeeID, answers.email, answers.school);
         teamMembers.push(intern);
         promptMenu();
     })    

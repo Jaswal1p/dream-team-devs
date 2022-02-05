@@ -10,23 +10,28 @@ header {
 }
 
 main {
-    display: flex;
-    flex-wrap: wrap;
+    /* display: flex;
+    flex-wrap: wrap; */
     margin: 15px;
     padding: 10px;
 
+}
+
+.card-container {
+    display: flex !important;
+    flex-direction: row !important;
 }
 
 .card {
-    padding: 10px;
-    margin: 15px;
-
+    margin: 15px !important;
 }
+
 
 .card-header {
     color: white;
     background-color: blue;
-
+    margin: 10px;
+    padding: 10px;
 }
 
 .list-group {
