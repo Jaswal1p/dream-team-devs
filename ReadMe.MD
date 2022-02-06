@@ -5,7 +5,7 @@
 # SAMPLE.html link
 https://github.com/Jaswal1p/dream-team-devs/blob/main/SAMPLE.html
  
- ## License 
+# License 
 ![GitHub license](https://img.shields.io/badge/License-MIT-yellow.svg) 
 [View License](https://opensource.org/licenses/MIT) 
 
@@ -43,7 +43,7 @@ https://github.com/Jaswal1p/dream-team-devs/blob/main/SAMPLE.html
  ![CSSwireframe_4574](https://user-images.githubusercontent.com/92233527/152698760-bc2f5811-d9c8-4e62-8669-d4b9cf27cd9c.jpg)
  
  # Installation
-  The following must be installed to run this application. Node.js, fs, npm dependencies, package.JSON, jest, VScode, GitHub, licenses and their badges.
+  The following must be installed to run this application. Node.js, fs, npm dependencies, package.JSON, jest, VScode, GitHub, license and its badges.
  # Usage
   This application is to create a team (any team) of software engineers, with various roles and members at various stages of skill set, to work togeather with every role's some individual properties also recognized for easy accessibility and contact info for each.
 
