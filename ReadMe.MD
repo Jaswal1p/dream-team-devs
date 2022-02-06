@@ -1,6 +1,9 @@
 # Repos/dream-team-devs
 
 # ![ScreenshotFromSAMPLEhtml141638](https://user-images.githubusercontent.com/92233527/152697717-5f20f55e-5eef-4376-b2a1-0b5dc5b9661e.png)
+
+# SAMPLE.html link
+https://github.com/Jaswal1p/dream-team-devs/blob/main/SAMPLE.html
  
  ## ![GitHub license](https://img.shields.io/badge/License-MIT-yellow.svg) 
 [View License](https://opensource.org/licenses/MIT) 
