@@ -5,13 +5,17 @@
 # SAMPLE.html link
 https://github.com/Jaswal1p/dream-team-devs/blob/main/SAMPLE.html
  
- ## ![GitHub license](https://img.shields.io/badge/License-MIT-yellow.svg) 
+ ## License 
+![GitHub license](https://img.shields.io/badge/License-MIT-yellow.svg) 
 [View License](https://opensource.org/licenses/MIT) 
+
+# Video link
+ https://watch.screencastify.com/v/ZEjIqbR3hcvdnqURheV9
  
- # GitHub Repository Link
+# GitHub Repository Link
  https://github.com/Jaswal1p/dream-team-devs.git
 
- # Table of Contents
+# Table of Contents
  * [Installation](#installation)
  * [Usage](#usage)
  * [License](#license)
@@ -38,9 +42,6 @@ https://github.com/Jaswal1p/dream-team-devs/blob/main/SAMPLE.html
 
  ![CSSwireframe_4574](https://user-images.githubusercontent.com/92233527/152698760-bc2f5811-d9c8-4e62-8669-d4b9cf27cd9c.jpg)
  
- # Video link
- https://watch.screencastify.com/v/ZEjIqbR3hcvdnqURheV9
-
  # Installation
   The following must be installed to run this application. Node.js, fs, npm dependencies, package.JSON, jest, VScode, GitHub, licenses and their badges.
  # Usage
