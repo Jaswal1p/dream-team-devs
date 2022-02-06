@@ -1,6 +1,6 @@
 # Repos/dream-team-devs
 
-# 
+# ![ScreenshotFromSAMPLEhtml141638](https://user-images.githubusercontent.com/92233527/152697717-5f20f55e-5eef-4376-b2a1-0b5dc5b9661e.png)
  
  ## ![GitHub license](https://img.shields.io/badge/License-MIT-yellow.svg) 
 [View License](https://opensource.org/licenses/MIT) 
@@ -30,9 +30,11 @@
  Once css file was done, I ran the program few times, as there wer minor display problems due to bootsrap file, which i corrected. I had to use '! important' in css file override some bootsrap parent properties. Finally it worked. The final pic of my app with my entries, is included in this ReadMe.MD. 
 
 
- # Screenshot
- ![alt text](assets/images/screenshot.png)
+ # Screenshots
+ ![Logic_4573](https://user-images.githubusercontent.com/92233527/152698731-f8646b1c-1fc7-4080-bef6-719255fd551f.jpg)
 
+ ![CSSwireframe_4574](https://user-images.githubusercontent.com/92233527/152698760-bc2f5811-d9c8-4e62-8669-d4b9cf27cd9c.jpg)
+ 
  # Video link
  https://watch.screencastify.com/v/jVH4jI1y9N3UVk3oUhIw
 
