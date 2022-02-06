@@ -6,7 +6,7 @@
 [View License](https://opensource.org/licenses/MIT) 
  
  # GitHub Repository Link
- https://git@github.com:Jaswal1p/dream-team-devs.git
+ https://git@github.com:Jaswal1p/dream-team-devs
 
  # Table of Contents
  * [Installation](#installation)
