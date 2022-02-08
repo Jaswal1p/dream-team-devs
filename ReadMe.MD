@@ -1,6 +1,6 @@
 # Repos/dream-team-devs
 
-# ![ScreenshotFromSAMPLEhtml141638](https://user-images.githubusercontent.com/92233527/152697717-5f20f55e-5eef-4376-b2a1-0b5dc5b9661e.png)
+# ![ScreenshotFromSAMPLEhtml141638](https://user-images.githubusercontent.com/92233527/152927054-29817d92-7c78-4a74-8195-4edda304c4dc.png)
 
 # SAMPLE.html link
 https://github.com/Jaswal1p/dream-team-devs/blob/main/SAMPLE.html
